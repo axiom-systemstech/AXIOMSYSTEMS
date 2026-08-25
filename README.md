@@ -28,7 +28,7 @@ AXIOM es un lenguaje de programación diseñado para construir **todo tipo de so
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/AXIOM-SYSTEMSTECH/axiom-systems.git
+git clone https://github.com/axiom-systemstech/AXIOMSYSTEMS.git
 cd axiom-systems
 
 # Compilar
