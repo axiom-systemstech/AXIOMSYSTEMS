@@ -62,6 +62,7 @@ fn main() {
 }
 ```
 
+```marckdown
 🏗️ Roadmap
 
 Fase Estado
@@ -75,6 +76,7 @@ Fase Estado
 ⏳ Package Manager PRÓXIMO
 ⏳ CLI completo PRÓXIMO
 ⏳ IDE PRÓXIMO
+```
 
 📚 Documentación
 
