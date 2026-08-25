@@ -1,0 +1,6 @@
+// examples/hello.ax - Primer programa AXIOM
+
+fn main() {
+    let message = "¡Hola, mundo!"
+    print(message)
+}
