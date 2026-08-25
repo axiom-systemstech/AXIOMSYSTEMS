@@ -1,11 +1,11 @@
 // src/main.rs - Punto de entrada de AXIOM
 
-use axion_core::lexer::Lexer;
+use axiom_core::lexer::Lexer;
 use colored::*;
 use std::fs;
 
 fn main() {
-    axion_core::init();
+    axiom_core::init();
     
     let args: Vec<String> = std::env::args().collect();
     
