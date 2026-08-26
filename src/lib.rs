@@ -9,17 +9,9 @@
 //! # AXIOM SYSTEMS
 //! 
 //! El primer ecosistema tecnológico completo construido desde cero.
-//! 
-//! ## Módulos
-//! 
-//! - `lexer`: Analizador léxico que convierte código fuente en tokens
-//! - `parser`: Analizador sintáctico (próximamente)
-//! - `compiler`: Compilador (próximamente)
-//! - `vm`: Máquina virtual (próximamente)
-//! - `std`: Biblioteca estándar (próximamente)
-//! - `cli`: Interfaz de línea de comandos (próximamente)
 
 pub mod lexer;
+pub mod parser;
 
 /// Versión del sistema
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
