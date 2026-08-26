@@ -69,7 +69,7 @@ Fase Estado
 ✅ Fundación COMPLETO
 ✅ Especificación del lenguaje COMPLETO
 ✅ Lexer COMPLETO
-⏳ Parser EN DESARROLLO
+✅ Parser COMPLETO
 ⏳ Compilador PRÓXIMO
 ⏳ VM PRÓXIMO
 ⏳ Standard Library PRÓXIMO
