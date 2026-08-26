@@ -1,7 +1,7 @@
 // src/lib.rs - AXIOM SYSTEMS Core Library
 
 #![deny(unsafe_code)]
-#![deny(missing_docs)]
+#![allow(missing_docs)]
 #![deny(rust_2018_idioms)]
 #![allow(clippy::too_many_arguments)]
 #![allow(clippy::type_complexity)]

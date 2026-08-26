@@ -6,7 +6,6 @@ use std::str::Chars;
 
 /// El lexer de AXIOM - Convierte texto en tokens según la especificación
 pub struct Lexer<'a> {
-    input: &'a str,
     chars: Peekable<Chars<'a>>,
     position: usize,
     line: usize,
@@ -17,9 +16,8 @@ pub struct Lexer<'a> {
 impl<'a> Lexer<'a> {
     pub fn new(input: &'a str) -> Self {
         let mut chars = input.chars().peekable();
-        let current_char = chars.peek().copied();
+        let current_char = chars.next();
         Self {
-            input,
             chars,
             position: 0,
             line: 1,
@@ -56,6 +54,7 @@ impl<'a> Lexer<'a> {
         let start_col = self.column;
         
         let token = match self.current_char {
+            Some('\n') => { self.advance(); Token::Newline }
             Some(c) if c.is_ascii_alphabetic() || c == '_' => {
                 let ident = self.collect_identifier();
                 self.ident_to_keyword(ident)

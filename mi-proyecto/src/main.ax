@@ -1,0 +1,5 @@
+// main.ax - Programa principal
+fn main() {
+    let message = "¡Hola, mundo!"
+    println(message)
+}

@@ -191,22 +191,26 @@ std::fs::write(path.join("README.md"), readme_content).unwrap();
 
 /// Inicializa un proyecto en el directorio actual
 fn init_project() {
-let path = Path::new(".");
+    let path = Path::new(".");
+    std::fs::create_dir_all(path.join("src")).unwrap();
 
+    let main_content = r#"// main.ax - Programa principal
 fn main() {
-let message = "¡Hola, mundo!"
-println(message)
+    let message = "¡Hola, mundo!"
+    println(message)
 }
 "#;
-std::fs::write("src/main.ax", main_content).unwrap();
+    std::fs::write(path.join("src/main.ax"), main_content).unwrap();
 
+    let cargo_content = r#"[package]
 name = "mi-proyecto"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 "#;
-std::fs::write("Cargo.toml", cargo_content).unwrap();
+    std::fs::write(path.join("Cargo.toml"), cargo_content).unwrap();
+    println!("Proyecto inicializado correctamente");
 
 }
 

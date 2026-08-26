@@ -10,9 +10,8 @@ readme = "README.md"
 categories = ["compilers", "programming-languages", "ecosystem"]
 keywords = ["language", "compiler", "vm", "ecosystem", "axiom"]
 
-[features]
-default = ["full"]
-full = ["std", "cli", "package-manager"]
+[lib]
+name = "axiom_core"
 
 [dependencies]
 thiserror = "1.0"
